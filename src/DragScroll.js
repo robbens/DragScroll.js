@@ -22,7 +22,7 @@ export default class DragScroll {
                 return false;
             }
 
-            if (!this.el.hasAttribute('nochilddrag') ||
+            if (!this.el.hasAttribute('nodrag') ||
                 this._document.elementFromPoint(
                     e.pageX, e.pageY
                 ) === this.el

@@ -54,7 +54,7 @@ var DragScroll = (function () {
             return false;
           }
 
-          if (!_this.el.hasAttribute('nochilddrag') || _this._document.elementFromPoint(e.pageX, e.pageY) === _this.el) {
+          if (!_this.el.hasAttribute('nodrag') || _this._document.elementFromPoint(e.pageX, e.pageY) === _this.el) {
             _this.mouseDown = true;
             _this.lastClientX = e.clientX;
             _this.lastClientY = e.clientY;
